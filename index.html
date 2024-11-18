@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#resume">Resume</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img id="randomImage" alt="Portfolio Background">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Welcome to My Professional Portfolio</h1>
+      <p>Showcasing my skills, experiences, and projects that define my career journey. Explore my work and discover how I can contribute to your team's success.</p>
+      <button>Contact Us</button>
+    </div>
+  </header>
+
+  <section>
+    <h2>Core Competencies</h2>
+    <p>A summary of the key skills that define my professional capabilities.</p>
+  </section>
+
+  <script>
+    // Array of image paths
+    const images = [
+      'top-view-workspace-with-laptop-notebook.jpg',
+      'pexels-enginakyurt-3290502.jpg'
+    ];
+
+    // Function to get a random image
+    function getRandomImage() {
+      const randomIndex = Math.floor(Math.random() * images.length);
+      return images[randomIndex];
+    }
+
+    // Set the random image as the source
+    document.getElementById('randomImage').src = getRandomImage();
+  </script>
+</body>
+</html>
