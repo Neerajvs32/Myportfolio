@@ -57,14 +57,52 @@ nav .nav-links a:hover {
   color: #00bcd4;
 }
 
-/* Footer */
+/* Footer Social Links */
 footer {
-  background-color: #333;
+  background-color: #99b77f;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   font-size: 0.9em;
-  margin: 0; /* Ensure no gap between footer and content */
+}
+
+footer p {
+  text-align: center; /* Center-align the text */
+  margin: 0 auto;
+  width: 100%; 
+  color: #fff;
+  padding-top: 10px; /* Adjust space if needed */
+}
+
+footer .social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .social-links a {
+  text-decoration: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+  transform: scale(1.2);
+}
+
+footer .social-links img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+footer .social-links a:hover img {
+  filter: grayscale(0%);
 }
 
 /* Section Styling */
